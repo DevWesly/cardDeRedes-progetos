@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    /* font-family: sans-serif font-size: 20px; */
+    /* color: blueviolet; */
+}
+
+@font-face {
+    font-family: 'Genericons';
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.woff");
+}
+
+.container {
+    display: flex;
+}
+
+.sanfona {
+    background-color: rgb(33, 7, 43);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 0;
+}
+
+.tab {
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    border-right: rgb(33, 7, 43) 1px solid;
+    width: 80px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    transition: all 0.5s ease-in-out;
+    /* border-radius: 10px; */
+}
+
+.tab:hover {
+    width: 450px;
+
+}
+
+.tab:hover .social a:before {
+    margin-left: -100px;
+}
+
+.tab:hover .social a:after {
+    margin-left: -5px;
+}
+
+.content {
+    background: rgb(255, 255, 255);
+    width: 360px;
+    height: 200px;
+    margin-left: 80px;
+    padding: 50px 0 0 15px;
+    position: relative;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+
+}
+
+.social a:after,
+.social a:before {
+    transition: all 0.4s ease-in-out 0.1s;
+    width: 80px;
+    height: 200px;
+    position: absolute;
+    text-indent: 0;
+    padding-top: 90px;
+    padding-left: 24px;
+    display: block;
+    font: normal 30px Genericons;
+    color: rgb(194, 194, 194);
+}
+
+.social a:after {
+    font-size: 48px;
+    padding-left: 20px;
+    padding-top: 80px;
+    margin-left: 85px;
+    color: black;
+}
+
+.youtube a:before,
+.youtube a:after {
+    content: '\f213';
+    border-left: rgb(255, 0, 0) 0px solid;
+    border-top: rgb(255, 0, 0) 0px solid;
+    border-bottom: rgb(255, 0, 0) 0px solid;
+
+}
+
+.youtube a:after {
+    background-color: rgb(255, 0, 0);
+}
+
+.instagran a:before,
+.instagran a:after {
+    content: '\f215';
+    border-left: #C13584 0px solid;
+    border-top: #C13584 0px solid;
+    border-bottom: #C13584 0px solid;
+}
+
+.instagran a:after {
+    background-color: #C13584;
+}
+
+.facebook a:before,
+.facebook a:after {
+    content: '\f204';
+    border-left: #3b5889 0px solid;
+    border-top: #3b5889 0px solid;
+    border-bottom: #3b5889 0px solid;
+}
+
+.facebook a:after {
+    background-color: #3b5889;
+}
+
+.linkedin a:before,
+.linkedin a:after {
+    content: '\f208';
+    border-left: #0077b5 0px solid;
+    border-top: #0077b5 0px solid;
+    border-bottom: #0077b5 0px solid;
+}
+
+.linkedin a:after {
+    background: #0077b5;
+}
+
+.github a:before,
+.github a:after {
+    content: '\f200';
+    border: #6e5494 0px solid;
+}
+
+.github a:after {
+    background-color: #6e5494;
+}
